@@ -24,6 +24,7 @@ namespace ymm_project_packingtool
 
         public async Task<string> Run()
         {
+            string res;
             YMMProjectFile? ymmpjson;
             string ymmpjsonresult;
             var sourcePaths = new List<string>();
@@ -35,7 +36,7 @@ namespace ymm_project_packingtool
 
                 using (StreamReader ymmpsr = new(ymmppath))
                 {
-                    var res = await ymmpsr.ReadToEndAsync();
+                    res = await ymmpsr.ReadToEndAsync();
                     if (res == null) throw new IOException("Project file doesn't exist!");
                     ymmpjson = JsonSerializer.Deserialize<YMMProjectFile>(res);
                     if (ymmpjson == null) throw new IOException("Can't convert to YMMPJsonStyle!");
@@ -53,17 +54,16 @@ namespace ymm_project_packingtool
                         elm.FilePath = Path.GetFileName(Path.Combine(Path.GetDirectoryName(elm.FilePath), guid + "_" + Path.GetFileName(elm.FilePath)));
                     }
                 }
+
+                ymmpjsonresult = res;
+
                 for (var i = 0; i < sourcePaths.LongCount(); i++)
                 {
                     File.Copy(sourcePaths[i], Path.Combine(ouputpath, outputGUIDs[i].ToString() + "_" + Path.GetFileName(sourcePaths[i])), true);
+                    ymmpjsonresult = ymmpjsonresult.Replace(sourcePaths[i].Replace("\\", "\\\\"), outputGUIDs[i].ToString() + "_" + Path.GetFileName(sourcePaths[i]));
                 }
 
                 // End
-
-                ymmpjsonresult = JsonSerializer.Serialize(ymmpjson, new JsonSerializerOptions
-                {
-                    Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
-                });
 
                 using (StreamWriter projfile = new(Path.Combine(ouputpath, "_プロジェクト.ymmp")))
                 {
