@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="YMM Project Packingtools" Height="300" Width="700">
     <Grid>
+        <Label Content="ゆっくりムービーメーカープロジェクトファイル：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Margin="10,41,100,0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="Ymmpfp"/>
+        <Button Content="ファイルを選択" HorizontalAlignment="Right" Margin="0,41,10,0" VerticalAlignment="Top" Height="18" Width="85" FontSize="11" Click="selectFile"/>
 
+        <Label Content="出力先ディレクトリ (空のディレクトリをおすすめします)：" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <TextBox Margin="10,95,100,0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="Outdirb"/>
+        <Button Content="フォルダを選択" HorizontalAlignment="Right" Margin="0,95,10,0" VerticalAlignment="Top" Height="18" Width="85" FontSize="11" Click="selectFolder"/>
+
+
+        <TextBox Margin="10,0,279,10" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="24" IsReadOnly="True" x:Name="ResultBox" BorderBrush="{x:Null}"/>
+        <Button Content="ディレクトリに出力" HorizontalAlignment="Right" Margin="0,0,107,10" VerticalAlignment="Bottom" Padding="30,1,30,1" FontSize="15" Click="Convert"/>
+        <Button Content="圧縮" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Padding="30,1,30,1" FontSize="15" Click="Zip"/>
     </Grid>
 </Window>
