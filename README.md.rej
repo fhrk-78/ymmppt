@@ -1,0 +1,13 @@
+diff a/README.md b/README.md	(rejected hunks)
+@@ -0,0 +1,11 @@
++# YMM Project Packingtool
++
++������胀�[�r�[���[�J�[�v���W�F�N�g������ŕҏW���鎞�̂��߂ɑS�ăR�s�[���Ĉ��k���邾���̃v���O����
++
++## �N�����@
++
++�_�E�����[�h����zip�̒���exe��N������
++
++## �J���ɂ���
++
++`YMMProjectFile.cs`��YMMP��t�V���A���C�Y�������̂��߂�JSON�̌^�������Ă��܂�(����Ƃ������@����������A�A)

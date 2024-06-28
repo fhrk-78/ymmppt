@@ -1,11 +1,11 @@
 # YMM Project Packingtool
 
-‚ä‚Á‚­‚èƒ€[ƒr[ƒ[ƒJ[ƒvƒƒWƒFƒNƒg‚ð‹¤“¯‚Å•ÒW‚·‚éŽž‚Ì‚½‚ß‚É‘S‚ÄƒRƒs[‚µ‚Äˆ³k‚·‚é‚¾‚¯‚ÌƒvƒƒOƒ‰ƒ€
+ã‚†ã£ãã‚Šãƒ ãƒ¼ãƒ“ãƒ¼ãƒ¡ãƒ¼ã‚«ãƒ¼ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…±åŒã§ç·¨é›†ã™ã‚‹æ™‚ã®ãŸã‚ã«å…¨ã¦ã‚³ãƒ”ãƒ¼ã—ã¦åœ§ç¸®ã™ã‚‹ã ã‘ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
 
-## ‹N“®•û–@
+## èµ·å‹•æ–¹æ³•
 
-ƒ_ƒEƒ“ƒ[ƒh‚µ‚½zip‚Ì’†‚Ìexe‚ð‹N“®‚·‚é
+ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸzipã®ä¸­ã®exeã‚’èµ·å‹•ã™ã‚‹
 
-## ŠJ”­‚É‚Â‚¢‚Ä
+## é–‹ç™ºã«ã¤ã„ã¦
 
-`YMMProjectFile.cs`‚ÉYMMP‚ð‹tƒVƒŠƒAƒ‰ƒCƒY‚µ‚½Žž‚Ì‚½‚ß‚ÌJSON‚ÌŒ^‚ª“ü‚Á‚Ä‚¢‚Ü‚·(‚à‚Á‚Æ‚¢‚¢•û–@‚ ‚Á‚½‚©‚àAA)
+`YMMProjectFile.cs`ã«YMMPã‚’é€†ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã—ãŸæ™‚ã®ãŸã‚ã®JSONã®åž‹ãŒå…¥ã£ã¦ã„ã¾ã™(ã‚‚ã£ã¨ã„ã„æ–¹æ³•ã‚ã£ãŸã‹ã‚‚ã€ã€)
